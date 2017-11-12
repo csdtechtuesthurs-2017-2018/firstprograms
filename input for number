@@ -1,0 +1,20 @@
+
+'''
+ageStr = input("What is your age? ")
+try:
+    age = int(ageStr)
+    print(age * 2)
+except ValueError:
+    print("Please enter a valid number. ")
+    
+'''    
+def getNumeric(prompt):
+    while True:
+        response = input(prompt)
+        try:
+            return int(response)
+        except ValueError:
+            print("Please enter a valid number. ")
+            
+age = getNumeric("What is your age? ")
+print (age * 2)
